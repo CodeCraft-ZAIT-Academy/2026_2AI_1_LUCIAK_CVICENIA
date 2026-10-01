@@ -1,0 +1,46 @@
+h1{
+    color:green;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2{
+    color:blue;
+    font-size: 30px;
+}
+
+h{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    color:blueviolet;
+    font-size: 35px;
+    font-family: cursive;
+    line-height: 3px;
+}
+
+a{
+    color: chocolate;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aqua;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section{
+    background-color: bisque;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+img{
+    border-image-width: 2px;
+    border: darkturquoise;
+    border-radius: 2px;
+}
