@@ -5,140 +5,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
     <link rel="stylesheet" href="style.css">
+<style>
+        .header {
+            display: flex; 
+            align-items: center; 
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .right-section {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .header-profile-icon {
+            width: 32px; 
+            height: 32px; 
+            border-radius: 50%; 
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .yt-logo {
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .notifications-count{
+             position: absolute;
+             background-color: red;
+             color: white;
+             top: -5px;
+             right: -5px;
+             border-radius: 10px;
+             font-family: Roboto, Arial;
+             font-size: 12px;
+             padding-left: 5px;
+             padding-right: 5px;
+        }
+
+        .Timestamp{
+            position: absolute;
+            left:215px;
+            bottom: 8px;
+            background-color: black;
+            color: white;
+            font-size: 12px;
+            padding-left: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-top: 2px;
+        }
+
+        .sidebar{
+            position: relative;
+            
+        }
+
+        .Home{
+            
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <h1>Youtube</h1>
-
-    <div class="search">
-        <input type="text" placeholder="Search">
-        <button>Search</button>
+    <div class="header">
+    <div class="left-section">
+        <img class = "Ciary" src = "https://static.thenounproject.com/png/356889-200.png"  width = "40px" height = "40px" alt = "Menu" style = "margin-top: 5px;">
+        <img class ="yt-logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" style = "margin-left: 20px; margin-bottom: 7px;" alt="YouTube Logo">
     </div>
+        <div class ="middle" style="flex: 1; display: flex; justify-content: center; margin-left: 50px; margin-right: 200px;width: 100%; max-width: 499px;">
+        <input class="search-bar" type="text" placeholder="Hľadať">
+        <img class = "Microphone" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-JLk-YAMUMTsnRhjt74oNGYGyWb0NhHmAJtTQqwQvg&s=10" style = "width: 30px; height: 30px;">
+    </div>
+ 
+    <div class="right-section" style="display: flex; align-items: center; gap: 15px;">
+        <img class="Camera" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8kFwDRTFtfTlcfjhJAHdmHRQQamKWkxeNByepyE14dw&s=10" alt="Camera" width="20px">
+        <img class="Menu" src="https://www.svgrepo.com/show/532349/restaurant-menu.svg" alt="Menu" width="20px">
+        <div style = "position: relative;">
+        <img class = "Bell" src="https://icons.veryicon.com/png/o/miscellaneous/interface-2/notification-bell-ring-1.png" alt="Notification bell" width="20px">
+        <div class = "notifications-count" >3</div>
+        </div>
+        <img class="header-profile-icon" src="https://yt3.ggpht.com/ytc/AIdro_kRpDdYhAERS6ZGouNca_ugsVF8A3TE6IaAg34T3P1jeMA=s48-c-k-c0x00ffffff-no-rj" alt="Profilovka">
+    </div>
+</div>
+
+<div style="display: flex;">
+</div>
+
+<div class = "sidebar">
+    <img class="Home" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSygr87OiTh3Nnrx6jgaV5iNiR02RvREe0t6mdcti8LcA&s=10" height="30px">
+</div>
+
 
 <div class="container">
 
     <div class="karta1">
-
-        <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Vt8ai1v0iG3UYhVxO0cQEyE8FG24QOvG4_wTCbuNomuzVv6yQjx_g6c&s=10" alt="YouTube video">
-
-        <div class="info">
-
-            <img class="profilovka" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Vt8ai1v0iG3UYhVxO0cQEyE8FG24QOvG4_wTCbuNomuzVv6yQjx_g6c&s=10" alt="Profilovka">
-
-            <div class="text">
-                <span class="name1">Co robia osipane vo volnom case</span>
-                <br>
-                <span class="views1">15 views • 30 billion years ago</span>
-            </div>
-
-            <span class="more">⋮</span>
-
-        </div>
-
+        <div style = "position: relative;">
+        <img class="thumbnail" src="https://vedanadosah.cvtisr.sk/wp-content/uploads/importovane/img/articles/njSc7meJ.jpg" alt="YouTube video">
+        <div class ="Timestamp">14:55</div>
     </div>
-     <div class="karta1">
-
-        <img class="thumbnail" src="https://www.pesweb.cz/api/media/uploads/large_Cesky_horsky_pes_atlas_psich_plemen_3b1edb592b_fa26a78251.png" alt="YouTube video">
-
         <div class="info">
+            <img class="profilovka" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRxf57PddYLQUUb6MVBmajZLnq51o3km-_pQZ7pi7_g&s=10" alt="Profilovka">
+            <div class="text">
+                <span class="name1">Domaci psik</span>
+                <br>
+                <span class="views1">15k views • 30 years ago</span>
+            </div>
+            <span class="more">⋮</span>
+        </div>
+    </div>
 
-            <img class="profilovka" src="https://www.pesweb.cz/api/media/uploads/large_Cesky_horsky_pes_atlas_psich_plemen_3b1edb592b_fa26a78251.png" alt="Profilovka">
-
+    <div class="karta1">
+        <div style = "position: relative;">
+        <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4kTsy5R9Dzzm2FhGZ6QzuatyzViYyAKC0W6AaIeXd1w&s=10" alt="YouTube video">
+        <div class ="Timestamp">5:32</div>
+    </div>
+        <div class="info">
+            <img class="profilovka" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMZEPArfurg7gSZlbdl1kn2c6nOnZTTJ7tmsl3dy4dJQ&s=10" alt="Profilovka">
             <div class="text">
                 <span class="name1">Ako urobit zabijacku u vas na zahrade</span>
                 <br>
-                <span class="views1">600k views • 30 seconds ago</span>
+                <span class="views1">1M views • 5 seconds ago</span>
             </div>
-
             <span class="more">⋮</span>
-
         </div>
-
     </div>
 
-     <div class="karta1">
-
-        <img class="thumbnail" src="https://vedanadosah.cvtisr.sk/wp-content/uploads/importovane/img/articles/njSc7meJ.jpg" alt="YouTube video">
-
+    <div class="karta1">
+        <div style = "position: relative;">
+            <img class="thumbnail" src="https://www.spsknm.sk/ssknm/sites/default/files/slideshowa/5.jpg" alt="YouTube video">
+            <div class ="Timestamp">25:59</div>
+        </div>
         <div class="info">
-
-            <img class="profilovka" src="https://vedanadosah.cvtisr.sk/wp-content/uploads/importovane/img/articles/njSc7meJ.jpg" alt="Profilovka">
-
+            <img class="profilovka" src="https://www.spsknm.sk/ssknm/sites/default/files/slideshowa/5.jpg" alt="Profilovka">
             <div class="text">
-                <span class="name1">Najhorsie rozhodnutie bolo byt logista</span>
+                <span class="name1">Nova Skola</span>
+                <br>
+                <span class="views1">6k views • 3 years ago</span>
+            </div>
+            <span class="more">⋮</span>
+        </div>
+    </div>
+
+    <div class="karta1">
+        <div style = "position: relative;">
+            <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuYTIUac0l41rEeZV9ogWGTzSNYmR5MA-U1PNES-LFJAdCmE4p2AcBZ5o&s=10" alt="YouTube video">
+            <div class ="Timestamp">3:50</div>
+        </div>
+        <div class="info">
+            <img class="profilovka" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Feier1960.jpg/250px-Feier1960.jpg?utm_source=sk.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Profilovka">
+            <div class="text">
+                <span class="name1">Ako postavit dom</span>
+                <br>
+                <span class="views1">15 views • 30 billion years ago</span>
+            </div>
+            <span class="more">⋮</span>
+        </div>
+    </div>
+
+    
+    <div class="karta1">
+        <div style = "position: relative;">
+            <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr32xhHRLVEk8I3yffWl1VP-GrlcSfykIB36X_PTrcIA&s=10" alt="YouTube video">
+            <div class ="Timestamp">51:01</div>
+        </div>
+        <div class="info">
+            <img class="profilovka" src="https://external-preview.redd.it/mrbeast-says-he-will-run-for-president-of-the-u-s-if-they-v0-foq0ApswwC6HAvsePNgs8PPuBxNyqvvhnH1vOoPEpbs.jpg?auto=webp&s=6dfcd0dde88e908901dcdede69d7f11d76e1fd87" alt="Profilovka">
+            <div class="text">
+                <span class="name1">Novy clen rodiny</span>
                 <br>
                 <span class="views1">600k views • 10 years ago</span>
             </div>
-
             <span class="more">⋮</span>
-
         </div>
-
     </div>
 
-</div>
-<div class="container">
-
-<div class="karta1">
-
-    <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Vt8ai1v0iG3UYhVxO0cQEyE8FG24QOvG4_wTCbuNomuzVv6yQjx_g6c&s=10" alt="YouTube video">
-
-    <div class="info">
-
-        <img class="profilovka" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Vt8ai1v0iG3UYhVxO0cQEyE8FG24QOvG4_wTCbuNomuzVv6yQjx_g6c&s=10" alt="Profilovka">
-
-        <div class="text">
-            <span class="name1">Co robia osipane vo volnom case</span>
-            <br>
-            <span class="views1">15 views • 30 billion years ago</span>
+    <div class="karta1">
+        <div style = "position: relative;">
+            <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe2n3rSWcE-koWpDDrR01m9wCCYX3AbnDhq0JeTuL1AA&s=10" alt="YouTube video">
+            <div class ="Timestamp">14:48</div>
+        </div>  
+        <div class="info">
+            <img class="profilovka" src="https://yt3.ggpht.com/ytc/AIdro_kRpDdYhAERS6ZGouNca_ugsVF8A3TE6IaAg34T3P1jeMA=s48-c-k-c0x00ffffff-no-rj" alt="Profilovka">
+            <div class="text">
+                <span class="name1">Recept na palacinky</span>
+                <br>
+                <span class="views1">15 views • 2 billion years ago</span>
+            </div>
+            <span class="more">⋮</span>
         </div>
-
-        <span class="more">⋮</span>
-
     </div>
-
-</div>
- <div class="karta1">
-
-    <img class="thumbnail" src="https://www.pesweb.cz/api/media/uploads/large_Cesky_horsky_pes_atlas_psich_plemen_3b1edb592b_fa26a78251.png" alt="YouTube video">
-
-    <div class="info">
-
-        <img class="profilovka" src="https://www.pesweb.cz/api/media/uploads/large_Cesky_horsky_pes_atlas_psich_plemen_3b1edb592b_fa26a78251.png" alt="Profilovka">
-
-        <div class="text">
-            <span class="name1">Ako urobit zabijacku u vas na zahrade</span>
-            <br>
-            <span class="views1">600k views • 30 seconds ago</span>
-        </div>
-
-        <span class="more">⋮</span>
-
-    </div>
-
-</div>
-
- <div class="karta1">
-
-    <img class="thumbnail" src="https://vedanadosah.cvtisr.sk/wp-content/uploads/importovane/img/articles/njSc7meJ.jpg" alt="YouTube video">
-
-    <div class="info">
-
-        <img class="profilovka" src="https://vedanadosah.cvtisr.sk/wp-content/uploads/importovane/img/articles/njSc7meJ.jpg" alt="Profilovka">
-
-        <div class="text">
-            <span class="name1">Najhorsie rozhodnutie bolo byt logista</span>
-            <br>
-            <span class="views1">600k views • 10 years ago</span>
-        </div>
-
-        <span class="more">⋮</span>
-
-    </div>
-
-</div>
-
 </div>
 
 </body>
