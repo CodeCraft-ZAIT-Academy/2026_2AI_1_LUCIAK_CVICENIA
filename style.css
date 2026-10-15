@@ -1,46 +1,77 @@
 h1{
-    color:green;
     text-align: center;
-    font-size: 50px;
 }
 
-h2{
-    color:blue;
-    font-size: 30px;
+.search{
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-h{
-    font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.search input{
+    width: 300px;
+    height: 30px;
 }
 
-p{
-    color:blueviolet;
-    font-size: 35px;
-    font-family: cursive;
-    line-height: 3px;
+.search button{
+    height: 36px;
 }
 
-a{
-    color: chocolate;
-    text-decoration: none;
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 15px 5px;
+    padding: 5px 20px;
 }
 
-a:hover{
-    color: aqua;
-    text-decoration: underline;
+.karta1{
+    width: 250px;
+    display:inline-block;
+}
+
+.thumbnail{
+    width: 250px;
+    height: 140px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.info{
+    display: flex;
+    margin-top: 8px;
+    align-items: flex-start;
+}
+
+.profilovka{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 10px 0 0;
+}
+
+.text{
+
+    width: 170px;
+}
+
+.name1{
     font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
-section{
-    background-color: bisque;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
+.views1{
+    color: gray;
+    font-size: 12px;
 }
 
-img{
-    border-image-width: 2px;
-    border: darkturquoise;
-    border-radius: 2px;
+.more{
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+.karta1:hover {
+    background-color: #e0e0e0;
+    margin-top: 8px;
 }
